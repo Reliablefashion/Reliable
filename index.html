@@ -2,39 +2,105 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <title>Reliable Fashion</title>
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      text-align: center;
-      font-family: Arial;
-    }
-    .logo {
-      width: 200px;
-      margin-top: 30px;
-    }
-    .info {
-      margin-top: 20px;
-      font-size: 18px;
-    }
-    .highlight {
-      color: gold;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reliable Fashion</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; }
+        header { background-color: #8e44ad; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #5e3370; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        section { padding: 20px; }
+        .category { border: 1px solid #ccc; margin: 10px 0; padding: 15px; background-color: white; }
+        footer { background-color: #8e44ad; color: white; text-align: center; padding: 15px; margin-top: 20px; }
+        button { background-color: #8e44ad; color: white; padding: 10px 15px; border: none; cursor: pointer; }
+        button:hover { background-color: #732d91; }
+        .gallery img { width: 200px; height: auto; margin: 10px; border-radius: 10px; }
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-  <img src="logo.png" alt="Reliable Fashion Logo" class="logo">
-  <h1 class="highlight">Reliable Fashion</h1>
-  <p>Designer Master</p>
-  <div class="info">
-    <p>Bridal, Lehenga choli, Western Gown</p>
-    <p>Indo Western Dress, Blouse</p>
-    <p>Sherwani, Modi Jacket, Kurta Pajama</p>
-    <p><strong>Mob:</strong> 9320434007 / 9004422598</p>
-    <p><strong>Address:</strong> B2/04/01, Shop No.2, Sector-16,<br>Near Fire Brigade, Vashi - Navi Mumbai 400703</p>
-    <p><strong>Email:</strong> reliablefashion4007@gmail.com</p>
-  </div>
+    <header>
+        <h1>Reliable Fashion</h1>
+        <p>वाशी, नवी मुंबई का विश्वसनीय बुटीक</p>
+    </header>
+    <nav>
+        <a href="#home">होम</a>
+        <a href="#categories">डिज़ाइन्स</a>
+        <a href="#order">ऑर्डर करें</a>
+        <a href="#contact">संपर्क करें</a>
+    </nav>
+    <section id="home">
+        <h2>हमारे बारे में</h2>
+        <p>Reliable Fashion में हम पारंपरिक और वेस्टर्न दोनों प्रकार के डिज़ाइनर कपड़े उपलब्ध कराते हैं।</p>
+    </section>
+    <section id="categories">
+        <h2>हमारे डिज़ाइन्स</h2>
+        <div class="category">
+            <h3>लहंगा चोली</h3>
+            <div class="gallery">
+                <img src="images/lehenga1.jpg" alt="Lehenga 1">
+                <img src="images/lehenga2.jpg" alt="Lehenga 2">
+            </div>
+            <button>ऑर्डर करें</button>
+        </div>
+        <div class="category">
+            <h3>शेरवानी</h3>
+            <div class="gallery">
+                <img src="images/sherwani1.jpg" alt="Sherwani 1">
+                <img src="images/sherwani2.jpg" alt="Sherwani 2">
+            </div>
+            <button>ऑर्डर करें</button>
+        </div>
+        <div class="category">
+            <h3>गाउन</h3>
+            <div class="gallery">
+                <img src="images/gown1.jpg" alt="Gown 1">
+                <img src="images/gown2.jpg" alt="Gown 2">
+            </div>
+            <button>ऑर्डर करें</button>
+        </div>
+        <div class="category">
+            <h3>इंडो-वेस्टर्न</h3>
+            <div class="gallery">
+                <img src="images/indo1.jpg" alt="Indo-western 1">
+                <img src="images/indo2.jpg" alt="Indo-western 2">
+            </div>
+            <button>ऑर्डर करें</button>
+        </div>
+    </section>
+    <section id="order">
+        <h2>ऑर्डर फॉर्म</h2>
+        <form>
+            <label>नाम: <input type="text" name="name" required></label><br><br>
+            <label>मोबाइल नंबर: <input type="text" name="phone" required></label><br><br>
+            <label>डिज़ाइन का नाम: <input type="text" name="design" required></label><br><br>
+            <button type="submit">भेजें</button>
+        </form>
+    </section>
+    <section id="contact">
+        <h2>संपर्क जानकारी</h2>
+        <p>फोन: 9320434007 / 9004422598</p>
+        <p>ईमेल: reliablefashion4007@gmail.com</p>
+        <p>पता: B2/04/01, शॉप नं.2, सेक्टर-16, वाशी, नवी मुंबई</p>
+    </section>
+    <a class="whatsapp-btn" href="https://wa.me/919320434007" target="_blank">&#x1F4AC;</a>
+    <footer>
+        <p>&copy; 2025 Reliable Fashion</p>
+    </footer>
 </body>
 </html>
